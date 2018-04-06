@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="other">
+    <CLASSES>
+      <root url="jar://E:/源代码/lib/mysql-connector-java-5.1.44-bin.jar!/" />
+      <root url="jar://E:/源代码/lib/Junit/hamcrest-core-1.3.jar!/" />
+      <root url="jar://E:/源代码/lib/Junit/junit-4.12.jar!/" />
+      <root url="jar://E:/源代码/lib/Junit/junit.jar!/" />
+      <root url="jar://E:/源代码/lib/fastjson-1.2.41.jar!/" />
+      <root url="jar://E:/源代码/lib/javax.servlet.jsp-api-2.3.1.jar!/" />
+      <root url="jar://E:/源代码/lib/javax.servlet-api-3.1.0.jar!/" />
+      <root url="jar://E:/源代码/lib/javax.annotation-api-1.2.jar!/" />
+      <root url="jar://E:/源代码/lib/Json/jackson-annotations-2.8.5.jar!/" />
+      <root url="jar://E:/源代码/lib/Json/jackson-core-2.8.5.jar!/" />
+      <root url="jar://E:/源代码/lib/Json/jackson-core-asl-1.9.13.jar!/" />
+      <root url="jar://E:/源代码/lib/Json/jackson-databind-2.8.5.jar!/" />
+      <root url="jar://E:/源代码/lib/Json/jackson-mapper-asl-1.9.13.jar!/" />
+      <root url="jar://E:/源代码/lib/jstl/jstl.jar!/" />
+      <root url="jar://E:/源代码/lib/jstl/standard.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

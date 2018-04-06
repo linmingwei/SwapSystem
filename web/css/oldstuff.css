@@ -1,0 +1,232 @@
+/*@import url(header.css);*/
+/*@import url(footer.css);*/
+body>.container{
+
+    margin-top: 160px;
+}
+/*分类列表*/
+nav.cate-nav ul{
+    list-style: none;
+}
+nav.cate-nav>ul>li{
+    display: block;
+    width: 200px;
+    height: 60px;
+    border:1px solid #eee;
+    border-radius:2px;
+
+
+    transition: 1s ease;
+    position: relative;
+    text-align: center;
+
+}
+nav.cate-nav li a{
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 60px;
+}
+nav.cate-nav li:hover{
+    background: #4a91ce;
+
+
+}
+nav.cate-nav li:hover>a{
+    color: #fff;
+
+}
+
+nav.cate-nav li:hover>ul{
+    display: block;
+}
+
+nav.cate-nav ul ul{
+    display: none;
+
+    position: absolute;
+    list-style: none;
+    left: 158px;
+    top: 0;
+    z-index: 100;
+
+}
+nav.cate-nav ul ul li{
+    display: block;
+    width: 180px;
+    height: 40px;
+    background: #fff;
+    border:1px solid #eee;
+    transition: 1s;
+
+}
+nav.cate-nav ul ul li a{
+    line-height: 40px;
+    color: #656565;
+}
+.stuff-filter .shaixuan{
+    position: relative;
+    display: inline-block;
+    top: -7px;
+    margin-right: 10px;
+}
+
+.btn-group{
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+/*卡片*/
+.col-md-4 .item{
+    position: relative;
+    padding: 3px;
+}
+.item .thumbnail{
+    padding: 0;
+    border: none;
+}
+.thumbnail>a>img{
+    display: inline-block;
+    width: 260px;
+    height: 200px;
+    /*background: url("../img/user/feizhuliu.jpg");*/
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+.item-title{
+    display: block;
+
+    margin-top: 0px;!important;
+    margin-bottom: 10px;!important;
+    line-height: 24px!important;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+.text-overflow{
+    margin-top: 8px;
+    overflow:hidden; /*内容超出宽度时隐藏超出部分的内容 */
+    text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+    white-space:nowrap; /*不换行 */
+}
+.item-body p{
+    display: inline;
+    font-size: 20px;
+    color: #6d6d6d;
+}
+.thumbnail .price{
+    font-size: 20px;
+    color: #ff5a5f;
+}
+.user-head{
+    margin-top: 10px;
+    /*line-height: 256.48px;*/
+}
+.user-head a>img{
+    /*background: url("../img/user/feizhuliu.jpg");*/
+    -webkit-background-size: cover;
+    background-size: cover!important;
+    width: 40px!important;
+    height: 40px!important;
+    display: inline-block!important;
+    border-radius: 50%!important;
+    vertical-align: middle!important;
+}
+.user-head span{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+.item-footer{
+    display: block;
+}
+
+.tag{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 0 0 0 ;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+}
+.tag li{
+    width: auto;
+    height: 30px;
+    padding: 8px;
+    text-align: center;
+    float: left;
+    background: #eee;
+    border-radius: 10px;
+    margin-right: 6px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.tag li:hover{
+    background: #4a91ce;
+    color: #fcf8e3
+}
+.items a{
+    text-align: center;
+    font-size: 19px;
+    color: #f0f0f0;
+}
+.items a.btn.btn-primary {
+    margin: 30px 0 30px 20px;
+    background: #4a91ce;
+    border-color: white;
+    width: 208px;
+    height: 40px;
+
+}
+.items a.btn.btn-primary:hover{
+    background: #2665ce;
+}
+/**/
+.stuff{
+    border: 1px solid #eee;
+    border-radius: 5px;
+
+}
+.stuff>a{
+    display: block;
+    background: url("../img/user/feizhuliu.jpg");
+    width: 260px;
+    height: 180px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border-radius: 5px;
+
+}
+.stuff-title{
+    text-align: justify-all ;
+}
+.stuff-title p{
+    display: inline-block;
+    width: 118.7px;
+    font-size: 19px;
+    color: #484848;
+
+
+}
+.stuff-price p{
+    display: inline-block;
+    width: 127px;
+    font-size: 17px;
+    font-weight: 700;
+
+}
+.stuff-owner a{
+    display: inline-block;
+    background: url("../img/user/feizhuliu.jpg");
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.stuff-owner p{
+    display: inline-block;
+}
+/*分页样式*/
+ul.pagination.pagination-lg {
+    margin: 0 260px;
+}

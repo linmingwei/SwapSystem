@@ -1,0 +1,121 @@
+
+body,html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    position: absolute;
+    background: url('../img/33.jpg') no-repeat fixed;
+    background-size:cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.login-nav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    background: rgba(0,0,0,.1);
+    border-bottom: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 70px;
+}
+.logo{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    margin: 15px 20px;
+
+}
+.logo a{
+    font-size: 22px;
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 900;
+}
+.login-nav .nav{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    float: right;
+
+}
+.login-nav .nav .nav-list{
+    margin: 0;
+    display: block;
+}
+.nav-list>li{
+    list-style-type: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 25px 10px 23px;
+    margin-right: 8px;
+    cursor: pointer;
+    color: #f0f0f0;
+}
+.nav-list li a{
+    color: #f0f0f0;
+    text-decoration: none;
+
+}
+.nav-list li:hover {
+    background: hsla(0,0%,100%,.2);
+}
+
+/*登录框*/
+body h1{
+    font-weight: 500;
+    font-size: 50px;
+    color: #fbfbfb;
+    margin-top: 130px;
+}
+.login-body{
+    margin-top: 20px;
+    padding: 0 470px;
+}
+.login-body .panel{
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    transition: height .2s ease-in;
+    opacity: 0.89;
+
+}
+.login-body .panel .form-group{
+    width: 90%;
+    margin: 20px auto;
+    padding: 0 20px 20px;
+}
+.login-body .panel .form-control{
+
+    height: 40px;
+    font-size: 18px;
+}
+.login-body .panel input::-webkit-input-placeholder{
+    font-size: 17px;
+}
+.login-body .panel .btn-primary{
+    display: block;
+    margin: 0px auto 15px;
+    width: 156px;
+    height: 43px;
+    border-color: white;
+    background-color: #4a91ce;
+}
+.login-body .panel .btn-primary:hover{
+    background: #2665ce;
+}
+/*validator样式*/
+small.help-block {
+    position: absolute;
+}

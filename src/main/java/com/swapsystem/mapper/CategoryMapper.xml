@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.swapsystem.mapper.CategoryMapper">
+    <resultMap id="categoryMap" type="Category">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="pid" property="pid"/>
+        <collection property="stuffList" column="id" select="com.swapsystem.mapper.StuffMapper.findByCid"/>
+    </resultMap>
+    <select id="findByPid" parameterType="int" resultType="Category">
+        SELECT * FROM category WHERE pid=#{pid};
+    </select>
+    <select id="findByCid" resultMap="com.swapsystem.mapper.StuffMapper.StuffMap" parameterType="int">
+        SELECT * FROM stuff WHERE cid=#{cid};
+    </select>
+    <select id="findByName" parameterType="string" resultType="Category">
+        SELECT * FROM category WHERE name=#{name};
+    </select>
+
+</mapper>

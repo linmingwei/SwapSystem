@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--配置别名-->
+    <typeAliases>
+        <!--<typeAlias type="com.swapsystem.mapper.UserMapper" alias="usermapper"/>-->
+        <package name="com.swapsystem.pojo"/>
+    </typeAliases>
+    <!--扫描包中的Mappper-->
+
+</configuration>

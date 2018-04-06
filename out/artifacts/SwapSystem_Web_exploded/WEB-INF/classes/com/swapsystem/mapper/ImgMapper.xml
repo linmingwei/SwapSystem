@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.swapsystem.mapper.ImgMapper">
+
+    <select id="findBySid" parameterType="int" resultType="Img">
+        SELECT * FROM img WHERE sid=#{sid};
+    </select>
+    <insert id="addImg" parameterType="Img" useGeneratedKeys="true">
+        INSERT into img(path, sid) VALUES (#{path},#{sid});
+    </insert>
+
+</mapper>

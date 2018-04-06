@@ -1,0 +1,25 @@
+footer{
+    display: block;
+
+}
+footer .container{
+    width: 890px;
+    margin:50px auto;
+}
+footer .container .col-md-3{
+    text-align: center;
+}
+footer .container .col-md-3 h4{
+    margin-bottom: 25px;
+    font-size: 22px;
+
+}
+footer .container .col-md-3 ul{
+    list-style: none;
+    padding: 0;
+    color:#666;
+}
+footer .container .col-md-12{
+    margin-top: 40px;
+    color: #666;
+}

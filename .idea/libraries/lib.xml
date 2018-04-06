@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://E:/源代码/lib/spring4.3/aopalliance-1.0.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/commons-logging-1.2.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-aop-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-aspects-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-beans-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-context-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-context-support-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-core-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-expression-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-instrument-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-instrument-tomcat-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-jdbc-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-jms-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-messaging-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-orm-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-oxm-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-test-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-tx-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-web-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-webmvc-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-webmvc-portlet-4.3.9.RELEASE.jar!/" />
+      <root url="jar://E:/源代码/lib/spring4.3/spring-websocket-4.3.9.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

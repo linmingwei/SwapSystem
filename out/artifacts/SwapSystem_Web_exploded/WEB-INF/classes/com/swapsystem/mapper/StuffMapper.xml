@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.swapsystem.mapper.StuffMapper">
+    <resultMap id="StuffMap" type="Stuff">
+        <id property="id" column="id"/>
+        <result column="name" property="name"/>
+        <result column="originalPrice" property="originalPrice"/>
+        <result column="price" property="price"/>
+        <result column="description" property="description"/>
+        <result column="oldness" property="oldness"/>
+        <result column="buyDate" property="buyDate"/>
+        <result column="otherInfo" property="otherInfo"/>
+        <result column="willing" property="willing"/>
+        <!--<association property="u"-->
+        <collection property="imgList" column="id" select="com.swapsystem.mapper.ImgMapper.findBySid"/>
+    </resultMap>
+    <select id="findByUid" parameterType="int" resultMap="StuffMap">
+        SELECT * FROM stuff WHERE uid=#{uid};
+    </select>
+    <select id="findById" parameterType="int" resultMap="StuffMap">
+        SELECT * FROM stuff WHERE id=#{id};
+    </select>
+    <select id="getStuffCard" resultMap="StuffMap">
+        SELECT * FROM stuff LIMIT 0,9;
+    </select>
+    <select id="searchByName" parameterType="string" resultMap="StuffMap">
+        SELECT * FROM stuff WHERE name LIKE CONCAT(CONCAT('%',#{name}),'%');
+    </select>
+    <select id="findByCid" parameterType="int" resultMap="StuffMap">
+        SELECT * FROM stuff WHERE cid=#{cid};
+    </select>
+    <insert id="addStuff" parameterType="Stuff" useGeneratedKeys="true">
+        INSERT INTO stuff(uid, name,cid,buyDate,willing,description,oldness,originalPrice,price,otherInfo) VALUES (#{uid},#{name},#{cid},#{buyDate},#{willing},#{description},#{oldness},#{originalPrice},#{price},#{otherInfo});
+    </insert>
+    <select id="findByName" parameterType="string" resultType="Stuff">
+        SELECT * FROM stuff WHERE name=#{name};
+    </select>
+    <select id="maxId" resultType="int">
+        SELECT max(id) FROM stuff;
+    </select>
+    <select id="getTotal" parameterType="int" resultType="int">
+        SELECT count(*) FROM stuff WHERE uid=#{uid};
+    </select>
+</mapper>

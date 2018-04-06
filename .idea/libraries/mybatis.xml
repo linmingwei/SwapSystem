@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="mybatis">
+    <CLASSES>
+      <root url="jar://E:/源代码/lib/myBatis/ant-1.9.6.jar!/" />
+      <root url="jar://E:/源代码/lib/myBatis/ant-launcher-1.9.6.jar!/" />
+      <root url="jar://E:/源代码/lib/myBatis/asm-5.2.jar!/" />
+      <root url="jar://E:/源代码/lib/myBatis/c3p0-0.9.5.2.jar!/" />
+      <root url="jar://E:/源代码/lib/myBatis/cglib-3.2.5.jar!/" />
+      <root url="jar://E:/源代码/lib/myBatis/javassist-3.22.0-CR2.jar!/" />
+      <root url="jar://E:/源代码/lib/myBatis/log4j-1.2.17.jar!/" />
+      <root url="jar://E:/源代码/lib/myBatis/log4j-api-2.3.jar!/" />
+      <root url="jar://E:/源代码/lib/myBatis/log4j-core-2.3.jar!/" />
+      <root url="jar://E:/源代码/lib/myBatis/mchange-commons-java-0.2.7.jar!/" />
+      <root url="jar://E:/源代码/lib/myBatis/mybatis-3.4.5.jar!/" />
+      <root url="jar://E:/源代码/lib/myBatis/mybatis-generator-core-1.3.5.jar!/" />
+      <root url="jar://E:/源代码/lib/myBatis/mybatis-spring-1.3.0.jar!/" />
+      <root url="jar://E:/源代码/lib/myBatis/ognl-3.1.15.jar!/" />
+      <root url="jar://E:/源代码/lib/myBatis/slf4j-api-1.7.25.jar!/" />
+      <root url="jar://E:/源代码/lib/myBatis/slf4j-log4j12-1.7.25.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

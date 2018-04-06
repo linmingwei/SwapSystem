@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            display: block;
+            background: red;
+            position: relative;
+            margin-top: 100px;
+        }
+        p{
+
+            position: absolute;
+            bottom: -100px;
+            opacity: 0;
+
+
+        }
+        div:hover p{
+            opacity: 1;
+            bottom: 0;
+            transition: all 1s ease;
+        }
+        a{
+            display: inline-block;
+            width: 42px;
+            height: 42px;
+            background-image: url('img/152G4N20-9.jpg');
+            background-size: cover;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+        ul>li{
+            position: relative;
+            float: left;display: block;list-style: none;border: 1px solid black;
+            width: 50px;
+            height: 20px;
+
+        }
+        ul li:hover #erji{
+            display: block;
+
+        }
+        ul>li>ul{
+            display: none;
+            position: absolute;
+            left: 30px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>你好</p>
+
+ul
+</div>
+<a href="#" class="text-hide">2</a>
+<ul class="">
+    <li >1
+        <ul id="erji">
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+        </ul>
+    </li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+
+</ul>
+<input id="username" name="username" type="text">
+<button id="btn">测试</button>
+<!--引入js文件-->
+<script src="../bootstrap/js/jquery-3.2.1.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('#btn').click(function (e) {
+            e.preventDefault();
+            var name=$('#username').val();
+            var age=18;
+            var user={"username":name,"age":age};
+            $.ajax({
+                type:"post",
+                contentType:"application/json",
+                url:"/user/valid2.do",
+                data:JSON.stringify(user),
+                dataType:"json",
+                success:function (data) {
+                    alert(data.valid2);
+                },
+                error:function (msg) {
+                    alert(msg);
+                }
+
+
+            })
+        })
+    });
+</script>
+</body>
+</html>
